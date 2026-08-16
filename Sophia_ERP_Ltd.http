@@ -1,0 +1,6 @@
+@Sophia_Ltd_HostAddress = http://localhost:5153
+
+GET {{Sophia_Ltd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
