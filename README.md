@@ -18,8 +18,11 @@ const applications = [
 ];
 
 Write a function that:
+
 Calculates the expected completion date for each application (submittedAt + processingDays).
+
 Filters and returns only applications that are overdue, assuming today's date is 2024-10-10.
+
 
 Expected Output:
 [
@@ -28,38 +31,59 @@ Expected Output:
 ]
 
 ### Solution
+
 Constraints:
+
 No External Libraries: Rely only on native language utilities (e.g., standard Date APIs).
+
 Code Clarity: Prioritize readable, maintainable code over overly concise solutions.
 
 
 
+
 ## QUESTION 2: Database Schema & Query Design
-Scenario: You are designing the storage layer for a backend system managing employee applications.
+
+Scenario: 
+
+You are designing the storage layer for a backend system managing employee applications.
 
 Part A – SQL Schema Design:
 
 Design two relational database tables (employees and applications) using PostgreSQL or MySQL syntax. Your design must include:
+
 Primary keys (PK) for both tables.
+
 Foreign key (FK) relationship linking applications to employees.
+
 Application status tracking (e.g., Pending, Approved, Rejected).
+
 Relevant audit timestamps (created_at, updated_at).
+
 
 Part B – Write a SQL query that retrieves:
 
 All Pending applications.
+
 The applicant's full name.
+
 Results ordered by submission date (oldest first).
 
 
 
 ### QUESTION 3: RESTful API Design
-Scenario
+
+Scenario:
+
 Design the backend API endpoints required to manage the lifecycle of employee applications (creation, retrieval, updates, and deletion).
 
-Tasks
+Tasks:
+
 Define the HTTP specifications for the following operations:
+
 Submit Application: Receive and store a new employee application.
+
 Retrieve Applications: Fetch all applications with support for query filters (e.g., by status or employee ID).
+
 Update Application Status: Approve, reject, or modify an existing application's status.
+
 Delete Application: Remove an application record by its unique identifier.
